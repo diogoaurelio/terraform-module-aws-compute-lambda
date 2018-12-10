@@ -1,7 +1,18 @@
 Terraform AWS module for Lambda function
 ========================================
 
+Generic repository for a terraform module for AWS lambda functions
+
 ![Image of Terraform](https://i.imgur.com/Jj2T26b.jpg)
+
+# Table of content
+
+- [Introduction](#intro)
+- [Usage](#usage)
+- [Release log](#release-log)
+- [Module versioning & git](#module-versioning-&-git)
+- [Local terraform setup](#local-terraform-setup)
+- [Authors/Contributors](#authorscontributors)
 
 
 # Intro
@@ -92,7 +103,30 @@ resource "aws_sns_topic" "lambda_sns_dql" {
 
 ```
 
-## Local terraform setup
+
+# Release log
+
+Whenever you bump this module's version, please add a summary description of the changes performed, so that collaboration across developers becomes easier.
+
+* version v0.0.1 - first module release
+
+# Module versioning & git
+
+To update this module please follow the following proceedure:
+
+1) make your changes following the normal git workflow
+2) after merging the your changes to master, comes the most important part, namely versioning using tags:
+
+```bash
+git tag v0.0.2
+```
+
+3) push the tag to the remote git repository:
+```bash
+git push origin master tag v0.0.2
+```
+
+# Local terraform setup
 
 * [Install Terraform](https://www.terraform.io/)
 
