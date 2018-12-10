@@ -101,13 +101,6 @@ brew install terraform
 ```
 
 * In order to automatic format terraform code (and have it cleaner), we use pre-commit hook. To [install pre-commit](https://pre-commit.com/#install).
-
-After installing pre-commit, you can set it up:
-```bash
-pre-commit install
-```
-
-
 * Run [pre-commit install](https://pre-commit.com/#usage) to setup locally hook for terraform code cleanup.
 
 ```bash
